@@ -1,0 +1,149 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(110, 110, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.container {
+    max-width: 955px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px auto;
+    height: 60vh;
+    padding: 15px;
+    background-color: white;
+    overflow-y: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.message {
+    background-color: rgb(218, 218, 218);
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.left {
+    float: left;
+    clear: both;
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    clear: both;
+    background-color: #3b82f6;
+    color: white;
+    text-align: right;
+}
+
+
+#send-container {
+    width: 100%;
+    max-width: 955px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messageInp {
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    color: white;
+    height: 35px;
+    width: 70px;
+    font-size: 16px;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+    .message {
+        font-size: 14px; 
+        max-width: 80%; 
+    }
+
+    #send-container {
+        flex-direction: column; 
+        width: 95%;
+    }
+
+    #messageInp {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .btn {
+        width: 100%; 
+    }
+}
